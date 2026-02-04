@@ -2,8 +2,8 @@
 {
     public partial class MainPage : ContentPage
     {
+        int gameScore = 0;
 
-    
         public MainPage()
         {
             InitializeComponent();
@@ -34,14 +34,20 @@
             if (rng5 == rng1 || rng5 == rng2 || rng5 == rng3 || rng5 == rng4)
                 score += rng5;
             PointsLabel.Text = "Wynik tego rzutu: " + score;
-
-
-
+            gameScore += score;
+            ResultLabel.Text = "Wynik gry: " + gameScore;
         }
 
         private void ResetButton_Clicked(object sender, EventArgs e)
         {
-
+            Dice1.Source = "question.jpg";
+            Dice2.Source = "question.jpg";
+            Dice3.Source = "question.jpg";
+            Dice4.Source = "question.jpg";
+            Dice5.Source = "question.jpg";
+            int gameScore = 0;
+            PointsLabel.Text = "Wynik tego rzutu: 0";
+            ResultLabel.Text = "Wynik gry: " + gameScore;
         }
     }
 }
