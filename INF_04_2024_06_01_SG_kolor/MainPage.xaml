@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INF_04_2024_06_01_SG_kolor.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Label
+                x:Name="TitleLabel"
+                Text="Gra w kości. Autor Jeffrey Epstein"
+                HorizontalOptions="Center"
+                />
+
+            <Button
+                x:Name="ThrowButton"
+                Text="RZUT KOŚĆMI"
+                Clicked="ThrowButton_Clicked"
+                />
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                >
+                <Image
+                    x:Name="Dice1"
+                    Source="question.jpg"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    Aspect="AspectFit"
+                    />
+
+                <Image
+                    x:Name="Dice2"
+                    Source="question.jpg"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    Aspect="AspectFit"
+                    />
+
+                <Image
+                    x:Name="Dice3"
+                    Source="question.jpg"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    Aspect="AspectFit"
+                    />
+
+                <Image
+                    x:Name="Dice4"
+                    Source="question.jpg"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    Aspect="AspectFit"
+                    />
+
+                <Image
+                    x:Name="Dice5"
+                    Source="question.jpg"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    Aspect="AspectFit"
+                    />
+            </HorizontalStackLayout>
+
+            <Label
+                x:Name="PointsLabel"
+                Text="Wynik tego losowania: "
+                HorizontalOptions="Center"
+                />
+
+            <Label
+                x:Name="ResultLabel"
+                Text="Wynik: "
+                HorizontalOptions="Center"
+                />
+
+            <Button
+                x:Name="ResetButton"
+                Text="RESETUJ WYNIK"
+                Clicked="ResetButton_Clicked"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
