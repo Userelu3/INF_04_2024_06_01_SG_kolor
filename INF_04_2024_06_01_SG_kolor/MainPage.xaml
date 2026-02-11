@@ -6,22 +6,34 @@
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="25">
+            Spacing="25"
+            BackgroundColor="Beige"
+            >
             
+
             <Label
                 x:Name="TitleLabel"
                 Text="Gra w kości. Autor Jeffrey Epstein"
-                HorizontalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="Brown"
+                TextColor="White"
+                FontSize="Large"
+                
                 />
 
             <Button
                 x:Name="ThrowButton"
                 Text="RZUT KOŚĆMI"
                 Clicked="ThrowButton_Clicked"
+                BackgroundColor="Chocolate"
+                HorizontalOptions="Center"
                 />
 
-            <HorizontalStackLayout
-                HorizontalOptions="Center"
+            <Grid
+                ColumnDefinitions="*, *, *, *, *"
+                HorizontalOptions="Fill"
+                BackgroundColor="White"
                 >
                 <Image
                     x:Name="Dice1"
@@ -29,6 +41,7 @@
                     HeightRequest="100"
                     WidthRequest="100"
                     Aspect="AspectFit"
+                    Grid.Column="0"
                     />
 
                 <Image
@@ -37,6 +50,7 @@
                     HeightRequest="100"
                     WidthRequest="100"
                     Aspect="AspectFit"
+                    Grid.Column="1"
                     />
 
                 <Image
@@ -45,6 +59,7 @@
                     HeightRequest="100"
                     WidthRequest="100"
                     Aspect="AspectFit"
+                    Grid.Column="2"
                     />
 
                 <Image
@@ -53,6 +68,7 @@
                     HeightRequest="100"
                     WidthRequest="100"
                     Aspect="AspectFit"
+                    Grid.Column="3"
                     />
 
                 <Image
@@ -61,8 +77,9 @@
                     HeightRequest="100"
                     WidthRequest="100"
                     Aspect="AspectFit"
+                    Grid.Column="4"
                     />
-            </HorizontalStackLayout>
+            </Grid>
 
             <Label
                 x:Name="PointsLabel"
@@ -80,6 +97,8 @@
                 x:Name="ResetButton"
                 Text="RESETUJ WYNIK"
                 Clicked="ResetButton_Clicked"
+                BackgroundColor="Chocolate"
+                HorizontalOptions="Center"
                 />
         </VerticalStackLayout>
     </ScrollView>
